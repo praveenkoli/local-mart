@@ -1,0 +1,60 @@
+<div class="back-drop" (click)="onClose()"></div>
+<div class="alert-box" style="border-radius: 20px;">
+
+  <div class="row page-box" >
+    <div class="col-md-12">
+      <form (ngSubmit)="onSubmit(f)" ngForm #f="ngForm">
+        <div *ngIf="signupMsg_sucess" class="success" >{{signupMsg_sucess}}</div>
+        <div *ngIf="signupMsg_error" class="error">{{signupMsg_error}}</div>
+        <div class="error" *ngIf="loginMsg">{{loginMsg}}</div>
+
+        <label for="email"><strong>Email Address</strong></label>
+        <div class="inputContainer">
+          <input type="text" class="form-control" ngModel email required name="email" id="email"
+            placeholder="ex john@xyz.com">
+        </div>
+        <br>
+        <div *ngIf="!userExists">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="firstname"><strong>First Name</strong> </label>
+              <input type="text" class="form-control" ngModel required name="firstname" placeholder="ex Rahul"
+                id="firstname">
+              <br>
+            </div>
+            <div class="col-md-6">
+              <label for="lastname"><strong>Last Name</strong> </label>
+              <input type="text" class="form-control" ngModel required name="lastname" placeholder="ex Patil"
+                id="lastname">
+            </div>
+          </div>
+        </div>
+
+        <label for="password"><strong>Password</strong></label>
+        <input type="password" password required class="form-control" ngModel name="password" id="password"><br>
+
+        <div *ngIf="!userExists">
+          <label for="confirm_password"><strong>Confirm Password</strong></label>
+          <input type="password" password required class="form-control" ngModel name="confirm_password"
+            id="confirm_password">
+          <span style="color: red"><br><strong>Note: All fields are mandatory</strong></span>
+        </div>
+        <hr style="height: 2px; color: rgba(0, 0, 128, 0.424);">
+        <div class="row">
+          <div class="col-sm-6">
+            <button mat-button mat-raised-button type="submit" style="margin-right: 1rem;">{{userExists ? 'Login'
+              : 'Sign Up'}}</button>
+            <button mat-button mat-raised-button color="primary" type="button" (click)="onSwitch()">{{userExists ?
+              'Sign Up' : 'Login'}}</button>
+          </div>
+
+          <div class="col-sm-6" style="text-align: right;">
+            <button class="btn btn-danger" type="button" (click)="onFormReset()">Reset</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+</div>

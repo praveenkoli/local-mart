@@ -1,0 +1,21 @@
+.usermenu{
+
+  padding-left: 3rem;
+}
+.a{
+  text-decoration: none;
+}
+
+
+/* for small screen */
+.sm-menu{
+  color:white;
+  text-align:center;
+  background-color: blue;
+}
+.sm-icon{
+  color:white;
+}
+.sm-menu:hover{
+  background-color:blueviolet;
+}

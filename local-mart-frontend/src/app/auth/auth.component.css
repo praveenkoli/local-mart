@@ -1,0 +1,107 @@
+input.ng-invalid.ng-touched{
+  border: 2px solid rgba(255, 0, 0, 0.342);
+}
+.response{
+  background-color: green;
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+.back-drop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.746);
+  z-index: 50;
+}
+
+.alert-box-action{
+  text-align: right;
+
+}
+@media screen and (max-width: 900px) {
+  .alert-box
+{
+  position:fixed;
+  top: 12rem;
+  left: 2%;
+  right: 2%;
+  max-width: 50rem;
+  min-width: 40rem;
+  padding: 26px;
+  background-color:cadetblue;
+  z-index: 150;
+  color: black;
+  box-shadow: 0 2px 8px rgb(0, 0, 0, 0.26);
+}
+}
+@media screen and (min-width: 900px) {
+  .alert-box
+{
+  position:fixed;
+  top: 12rem;
+  left: 30%;
+  right: 30%;
+  max-width: 50rem;
+  min-width: 40rem;
+  padding: 26px;
+  background-color:cadetblue;
+  z-index: 150;
+  color: black;
+  box-shadow: 0 2px 8px rgb(0, 0, 0, 0.26);
+}
+}
+/* .small-scr{
+  position: fixed;
+  top: 10vh;
+  left: 50vw;
+  right: 50vh;
+  padding: 26px;
+  background-color: black;
+  z-index: 150;
+  color: white;
+  box-shadow: 0 2px 8px rgb(0, 0, 0, 0.26);
+} */
+.success{
+  margin-bottom: 1rem;
+
+  padding: 0.5rem;
+  color: green;
+  text-align: center;
+  border: solid green 1px;
+  background-color: rgba(0, 128, 0, 0.301);
+  font-size: 17px;
+}
+.error{
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  color: red;
+  text-align: center;
+  border: solid red 1px;
+  background-color: rgba(255, 0, 0, 0.301);
+  font-size: 17px;
+}
+.inputContainer i {
+  position: absolute;
+}
+.inputContainer {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.icon {
+  padding: 15px;
+  color: rgb(49, 0, 128);
+  width: 70px;
+  text-align: left;
+}
+.page-box{
+  padding:2rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  border-top: navy solid 2px;
+  border-bottom: navy solid 2px;
+  border-left: navy dashed 2px;
+  border-right: navy dashed 2px;
+}

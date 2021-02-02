@@ -1,0 +1,16 @@
+.main{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+
+}
+
+.part2{
+  /* background-color:rgba(241, 227, 227, 0.972) ; */
+
+  background-color: azure;
+   padding-bottom: 0rem;
+   min-height: 78vh;
+}
+

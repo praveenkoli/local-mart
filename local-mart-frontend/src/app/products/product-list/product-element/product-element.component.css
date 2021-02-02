@@ -1,0 +1,29 @@
+.main-card{
+  margin-bottom: 1rem;
+  background-color: white;
+
+}
+.cart-button{
+  /* border-radius: 25%; */
+  display:inline-block;
+  color: white;
+  width:2rem;
+  user-select: none;
+   cursor:pointer;
+   text-align: center;
+   text-decoration: none;
+
+}
+.main-card:hover{
+  z-index: 50;
+  transform: scale(1.05);
+
+}
+.category{
+  background-color: red;
+  color: white;
+  height: 25px;
+  padding: 2px 1rem;
+  max-width: 6rem;
+  text-align: center;
+}
